@@ -40,6 +40,8 @@ Kalau sudah disimpan lalu dibuka di browser, kita akan melihat tampilan halaman 
 <img width="1756" height="311" alt="Screenshot 2025-09-29 124313" src="https://github.com/user-attachments/assets/c20c6e4a-073d-4a05-b179-86623fcac4e0" />
 
 
+
+
 2. Menambahkan CSS Internal
 Setelah itu, kita coba menambahkan CSS internal di bagian <head>. Kode CSS internal ditulis di dalam tag <style>. Contohnya: kita atur font, tinggi header, warna teks, dan posisi judul agar lebih rapi.
 
@@ -73,6 +75,8 @@ Kalau halaman di-refresh, tampilan teks akan berubah sesuai style yang kita atur
 <img width="953" height="709" alt="Screenshot 2025-09-29 124606" src="https://github.com/user-attachments/assets/472f1fff-6afd-4559-a6e7-1b117ea3f932" />
 
 
+
+
 3. Menambahkan Inline CSS
 Selanjutnya, kita belajar pakai inline CSS. Caranya: menambahkan style langsung ke dalam tag HTML. Misalnya pada paragraf <p>, kita kasih aturan text-align:center dan warna teks tertentu.
 
@@ -84,6 +88,8 @@ Code:
 Kalau disimpan dan dibuka lagi di browser, paragraf itu tampil beda dengan yang lain.
 
 <img width="953" height="738" alt="Screenshot 2025-09-29 140115" src="https://github.com/user-attachments/assets/0d66d274-3cad-4b75-a00d-deba41655364" />
+
+
 
 
 4. Membuat CSS Eksternal
@@ -120,6 +126,8 @@ Code:
 Setelah di-refresh, navigasi akan berubah sesuai style dari file CSS eksternal.
 
 <img width="962" height="676" alt="Screenshot 2025-09-29 140538" src="https://github.com/user-attachments/assets/c2d40f85-3a5c-4505-a1d2-c0cedd6c78ec" />
+
+
 
 
 5. Menambahkan CSS Selector (ID dan Class)
