@@ -8,3 +8,71 @@ penjelasan dan contohnya!
 4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut 
 terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? 
 Berikan penjelasan dan contohnya!  ( <p id="paragraf-1" class="text-paragraf"> )
+
+Jawaban 
+
+1. Eksperimen mengubah properti dan nilai CSS
+Kalau sudah punya file HTML dan CSS, coba ubah atau tambahkan properti CSS.
+Misalnya di kode CSS ada:
+```
+h1 {
+  font-size: 24px;
+  color: #0F189F;
+  text-align: center;
+}
+```
+bisa eksperimen:
+•	Ubah color: #0F189F; jadi color: red;
+•	Tambahkan background-color: yellow; supaya judul punya latar belakang.
+•	Atau tambahkan text-transform: uppercase; biar teks jadi huruf kapital semua.
+Jadi intinya, silakan ubah nilai properti sesuai cheat sheet, lalu lihat hasilnya di browser.
+
+2. Perbedaan h1 {...} dengan #intro h1 {...}
+•	h1 {...} → berlaku untuk semua elemen h1 di dalam halaman. Jadi kalau ada banyak <h1>, semuanya kena gaya ini.
+•	#intro h1 {...} → hanya berlaku untuk elemen <h1> yang ada di dalam elemen dengan id intro.
+Contoh:
+```
+<h1>Judul Umum</h1>
+<div id="intro">
+  <h1>Judul di Intro</h1>
+</div>
+```
+Kalau pakai h1 {color: blue;}, kedua judul jadi biru.
+Tapi kalau pakai #intro h1 {color: red;}, hanya judul yang ada di dalam <div id="intro"> yang merah.
+
+3. Internal, Eksternal, dan Inline CSS pada elemen yang sama
+Kalau ketiga jenis CSS dipakai pada elemen yang sama, maka urutan prioritasnya:
+Inline CSS > Internal CSS > Eksternal CSS
+Artinya, browser akan menampilkan Inline CSS karena prioritasnya paling tinggi.
+Contoh:
+```
+<head>
+  <style>
+    p {color: blue;} /* Internal CSS */
+  </style>
+  <link rel="stylesheet" href="style.css"> <!-- Eksternal CSS -->
+</head>
+<body>
+  <p style="color: red;">Teks ini warnanya apa?</p>
+</body>
+```
+Hasil di browser → teks jadi merah, karena inline lebih kuat dibanding internal dan eksternal.
+
+4. Elemen punya ID dan Class, mana yang dipakai?
+Kalau satu elemen punya ID dan Class sekaligus, dan keduanya punya aturan CSS, maka:
+ID lebih kuat dibanding Class.
+Contoh:
+```
+<p id="paragraf-1" class="text-paragraf">Ini teks percobaan</p>
+CSS-nya:
+#paragraf-1 {
+  color: red;
+}
+.text-paragraf {
+  color: blue;
+}
+```
+Hasilnya → teks jadi merah, karena CSS dengan ID (#paragraf-1) punya prioritas lebih tinggi daripada Class (.text-paragraf).
+
+
+
